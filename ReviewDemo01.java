@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// v0.5
+// v0.6
 public class ReviewDemo01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,9 +20,11 @@ public class ReviewDemo01 {
              }
              k++;
          }
-         if(isPrime)// isPrime 변수 값이 true이면
-             System.out.println(number + "은(는) 소수!");
-         else
-             System.out.println(number + "은(는) 소수가 아닙니다");
+
+        System.out.println(number + (isPrime ? "은(는) 소수!" : "은(는) 소수가 아닙니다"));
+//         if(isPrime)// isPrime 변수 값이 true이면
+//             System.out.println(number + "은(는) 소수!");
+//         else
+//             System.out.println(number + "은(는) 소수가 아닙니다");
     }
 }
